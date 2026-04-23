@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  margin: 20px auto 5px auto;
+  max-width: 900px;
+  position: sticky;
+  top: 20px;
+  z-index: 100;
+}
+
+.navBrand {
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #fff, #aaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navLinks {
+  display: flex;
+  gap: 24px;
+}
+
+.navLink {
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.navLink:hover {
+  opacity: 1;
+  color: var(--accent);
+}
+
+.mainContent {
+  padding: 24px 32px;
+  position: relative;
+  z-index: 10;
+  min-height: calc(100vh - 100px);
+  pointer-events: none;
+}

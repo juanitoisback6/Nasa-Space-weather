@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 100px);
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: auto;
+  margin-bottom: 40px;
+}
+
+.searchPanel {
+  padding: 32px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.searchPanel h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.searchPanel p {
+  color: #ccc;
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #aaa;
+}
+
+.resultsContainer {
+  width: 100%;
+  animation: fadeIn 0.5s ease;
+}
+
+.emptyState {
+  padding: 32px;
+  text-align: center;
+  color: #ffaa00;
+  border-color: rgba(255, 170, 0, 0.3);
+}
+
+.emptyState h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.dataCard {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  transition: transform 0.2s ease;
+}
+
+.dataCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.dataCard h3 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.eventCount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent);
+}
